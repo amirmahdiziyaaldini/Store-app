@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 import './globals.css';
 import 'remixicon/fonts/remixicon.css';
+import Providers from './providers';
 
 const montserrat = Montserrat({
 	subsets: ['latin'],
@@ -24,7 +25,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en" className="text-[#0a1d37]">
-			<body className={`${montserrat.className} antialiased`}>{children}</body>
+			<body className={`${montserrat.className} antialiased`}>
+				<Providers>{children}</Providers>
+			</body>
 		</html>
 	);
 }
