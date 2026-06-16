@@ -1,5 +1,4 @@
 import CommoSection from '@/components/ui/CommoSection';
-import Link from 'next/link';
 import CheckoutForm from './CheckoutForm';
 
 export default function Checkout() {

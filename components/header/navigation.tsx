@@ -16,7 +16,7 @@ interface NavItem {
 }
 
 const NAV_ITEMS: NavItem[] = [
-	{ address: '/home', namePage: 'Home' },
+	{ address: '/', namePage: 'Home' },
 	{ address: '/shop', namePage: 'Shop' },
 	{ address: '/cart', namePage: 'Cart' },
 ];
@@ -147,7 +147,7 @@ export default function Navigation() {
 				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
 					<div className="flex items-center justify-between">
 						{/* Logo */}
-						<Link href="/home" className="flex items-center gap-3 group">
+						<Link href="/" className="flex items-center gap-3 group">
 							<Image
 								src={logo}
 								alt="logo"
