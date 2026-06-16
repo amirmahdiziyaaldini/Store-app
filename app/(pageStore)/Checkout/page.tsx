@@ -1,50 +1,14 @@
 import CommoSection from '@/components/ui/CommoSection';
 import Link from 'next/link';
+import CheckoutForm from './CheckoutForm';
 
 export default function Checkout() {
-	const inputClass =
-		'w-full h-12 px-4 rounded-lg border border-slate-300 bg-white text-slate-700 placeholder:text-slate-400 transition-all duration-200 focus:border-[#0a1d37] focus:ring-4 focus:ring-[#0a1d37]/10 outline-none';
 	return (
 		<div>
 			<CommoSection title={'Checkout'} />
 			<div className="px-4 sm:px-6 lg:px-8 my-9 grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-7">
-				<form className="flex flex-col gap-4 bg-white p-5 md:p-7 rounded-xl shadow-sm border border-slate-200">
-					<h3 className="text-xl font-semibold text-[#0a1d37] mb-2">
-						Billing Information
-					</h3>
-
-					<input
-						type="text"
-						placeholder="Enter your name"
-						className={inputClass}
-					/>
-
-					<input
-						type="email"
-						placeholder="Enter your email"
-						className={inputClass}
-					/>
-
-					<input type="tel" placeholder="Phone number" className={inputClass} />
-
-					<input
-						type="text"
-						placeholder="Street address"
-						className={inputClass}
-					/>
-
-					<div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-						<input type="text" placeholder="City" className={inputClass} />
-
-						<input
-							type="text"
-							placeholder="Postal code"
-							className={inputClass}
-						/>
-					</div>
-
-					<input type="text" placeholder="Country" className={inputClass} />
-				</form>
+				{/* a  */}
+				<CheckoutForm />
 
 				{/* b */}
 				<div
@@ -108,31 +72,6 @@ export default function Checkout() {
 						<i className="ri-shield-check-line text-green-400 text-lg"></i>
 						<span>Secure Checkout Guaranteed</span>
 					</div>
-
-					{/* Button */}
-					<Link
-						href="/OrderSuccessPage"
-						className="
-			mt-6
-			flex
-			items-center
-			justify-center
-			gap-2
-			w-full
-			bg-white
-			text-[#0a1d37]
-			font-bold
-			py-4
-			rounded-2xl
-			transition-all
-			duration-300
-			hover:-translate-y-1
-			hover:shadow-xl
-		"
-					>
-						<span>Place Order</span>
-						<i className="ri-arrow-right-line"></i>
-					</Link>
 
 					{/* Extra info */}
 					<p className="text-center text-xs text-slate-400 mt-4">

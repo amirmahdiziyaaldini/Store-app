@@ -39,6 +39,28 @@ export const signupSchema = yup.object({
 });
 
 
+// Checkout__________________________
+export const checkoutSchema = yup.object({
+	name: yup
+		.string()
+		.required('Name is required')
+		.min(3, 'Minimum 3 characters'),
+
+	email: yup.string().required('Email is required').email('Invalid email'),
+
+	phone: yup.string().required('Phone is required'),
+
+	address: yup.string().required('Address is required'),
+
+	city: yup.string().required('City is required'),
+
+	postalCode: yup.string().required('Postal code is required'),
+
+	country: yup.string().required('Country is required'),
+});
+
+
 // typs_________________
 export type LoginFormData = yup.InferType<typeof loginSchema>;
 export type SignupFormData = yup.InferType<typeof signupSchema>;
+export type CheckoutFormData = yup.InferType<typeof checkoutSchema>;

@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛒 Store App (Next.js & TypeScript)
 
-## Getting Started
+یک وب‌اپلیکیشن فروشگاهی مدرن، سریع و کاملاً واکنش‌گرا (Responsive) که با استفاده از جدیدترین ابزارها و فریم‌ورک‌های اکوسیستم React توسعه یافته است. در این پروژه روی مدیریت وضعیت بهینه، امنیت تایپ‌ها (Type-Safety) و تجربه کاربری نرم روان تمرکز شده است.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
+## 🛠 تکنولوژی‌ها و ابزارهای به کار رفته
+
+- **Framework:** Next.js (App Router)
+- **Language:** TypeScript (Strict Mode)
+- **State Management:** Zustand
+- **Data Fetching & Caching:** React Query (TanStack Query)
+- **Form Management:** React Hook Form
+- **Validation:** Yup
+- **Styling:** Tailwind CSS
+- **API Mocking**: React/Mock Handlers
+
+---
+
+## ✨ ویژگی‌های برجسته پروژه
+
+- **کاملاً کامپوننت‌محور و Type-Safe:** استفاده حداکثری از قابلیت‌های ادغام TypeScript با کامپوننت‌های فرانت‌اَند.
+- **مدیریت وضعیت سراسری با Zustand:** پیاده‌سازی بخش‌هایی مثل سبد خرید به صورت بسیار سبک و بهینه بدون نیاز به رندرهای اضافه.
+- **کِشینگ و مدیریت ریکوئست‌ها با React Query:** دریافت اطلاعات محصولات از API، مدیریت لودینگ‌ها، ارورها و کش کردن داده‌ها جهت افزایش سرعت برنامه.
+- **فرم‌های بهینه با React Hook Form & Yup:** ساخت فرم‌های سبک، سریع و اعمال سیستم اعتبارسنجی (Validation) پیشرفته روی ورودی‌های کاربر.
+- **طراحی واکنش‌گرا (Responsive Design):** استفاده از Tailwind CSS برای نمایش بی‌نقص در انواع دستگاه‌ها (موبایل، تبلت و دسکتاپ).
+
+شبیه‌سازی مستقل بک‌پند: استفاده از هندلرهای ساختگی برای شبیه‌سازی درخواست‌های HTTP و پاسخ‌های سرور، جهت تست دقیق متدهای CRUD و وضعیت‌های مختلف شبکه (لودینگ، ارور و موفقیت‌آمیز).
+
+---
+
+## 🚀 نحوه راه‌اندازی پروژه به صورت محلی
+
+برای اجرای پروژه روی سیستم خود، مراحل زیر را دنبال کنید:
+
+۱. ابتدا پروژه را کلون کنید:
+bash
+git clone https://github.com/amirmahdiziyaaldini/Store-app.git
+
+۲. وارد پوشه پروژه شوید:
+bash
+cd Store-app
+
+۳. وابستگی‌ها را نصب کنید:
+bash
+yarn install
+
+# یا اگر از npm استفاده می‌کنید: npm install
+
+۴. پروژه را در حالت توسعه اجرا کنید:
+bash
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# یا: npm run dev
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+سپس مرورگر خود را باز کرده و به آدرس `http://localhost:3000` بروید.
