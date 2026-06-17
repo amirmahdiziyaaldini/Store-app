@@ -1,11 +1,7 @@
-// app/(pageStore)/shop/page.tsx
-import type { Metadata } from 'next';
 import ShopClient from './ShopClient';
 import CommonSection from '@/components/ui/CommoSection';
-
-export const metadata: Metadata = {
-	title: 'Shop',
-};
+import { shopMetadata } from '@/lib/metadata';
+export const metadata = shopMetadata;
 
 export default function ShopPage() {
 	return (

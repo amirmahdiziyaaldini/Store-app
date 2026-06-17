@@ -134,7 +134,6 @@ export default function Clock() {
 							src={counterImg}
 							alt="Counter Timer"
 							priority
-							quality={100}
 							className="
 								h-auto
 								w-full

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import CommonSection from '@/components/ui/CommoSection';
 import ProductClient from './ProductClient';
+import { generateProductMetadata } from '@/lib/metadata';
 
 export async function generateMetadata({
 	params,
@@ -17,10 +18,7 @@ export async function generateMetadata({
 
 	const product = await res.json();
 
-	return {
-		title: product.productName,
-		description: product.shortDesc,
-	};
+	return generateProductMetadata(product);
 }
 
 export default async function ProductDetailsPage({

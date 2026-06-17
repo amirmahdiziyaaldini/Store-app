@@ -65,7 +65,6 @@ export default function ProductCard({
 						alt={title}
 						width={300}
 						height={256}
-						quality={85}
 						className="w-full h-48 sm:h-56 md:h-64 object-contain p-2 transition-transform duration-300 hover:scale-110"
 					/>
 				</div>

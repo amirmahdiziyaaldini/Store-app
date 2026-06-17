@@ -6,34 +6,8 @@ import heroImg from '@/public/images/hero-img.png';
 import Services from '@/Services/services';
 import ProductList from '@/components/ui/ProductList';
 import Clock from '@/components/ui/Clock';
-
-export const metadata: Metadata = {
-	title: 'Home',
-	description:
-		'Explore trending furniture, chairs, sofas, watches and electronics at Multimart ecommerce store.',
-
-	keywords: [
-		'Furniture',
-		'Ecommerce',
-		'Chair',
-		'Sofa',
-		'Watch',
-		'Electronics',
-		'Next.js',
-	],
-
-	openGraph: {
-		title: 'Multimart | Home',
-		description:
-			'Explore trending furniture, chairs, sofas, watches and electronics.',
-		type: 'website',
-	},
-
-	robots: {
-		index: true,
-		follow: true,
-	},
-};
+import { homeMetadata } from '@/lib/metadata';
+export const metadata = homeMetadata;
 
 export default function HomePage() {
 	const year = new Date().getFullYear();
