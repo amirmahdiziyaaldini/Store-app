@@ -1,4 +1,3 @@
-// lib/validations/authSchema.ts
 import * as yup from 'yup';
 
 

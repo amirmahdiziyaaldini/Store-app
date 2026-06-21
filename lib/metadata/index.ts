@@ -1,4 +1,3 @@
-// lib/metadata/index.ts
 import type { Metadata } from 'next';
 
 const BASE_URL = 'https://multimart.com';

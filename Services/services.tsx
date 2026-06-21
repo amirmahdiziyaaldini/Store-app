@@ -1,5 +1,5 @@
 'use client';
-import serviceData from '../assets/data/serviceData';
+import serviceData from '../lib/data/serviceData'
 export default function Services() {
 	return (
 		<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

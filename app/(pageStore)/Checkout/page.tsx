@@ -1,5 +1,7 @@
 import CommoSection from '@/components/ui/CommoSection';
 import CheckoutForm from './CheckoutForm';
+import { checkoutMetadata } from '@/lib/metadata';
+export const metadata = checkoutMetadata;
 
 export default function Checkout() {
 	return (
