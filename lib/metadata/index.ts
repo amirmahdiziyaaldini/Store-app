@@ -98,3 +98,35 @@ export function generateProductMetadata(product: {
 		},
 	};
 }
+
+// admin_______________________________________________
+
+export const dashboardMetadata: Metadata = {
+	title: 'Dashboard | Admin',
+	robots: { index: false, follow: false },
+};
+
+export const ordersMetadata: Metadata = {
+	title: 'Orders | Admin',
+	robots: { index: false, follow: false },
+};
+
+export const productsMetadata: Metadata = {
+	title: 'Products | Admin',
+	robots: { index: false, follow: false },
+};
+
+export const addProductMetadata: Metadata = {
+	title: 'Add Product | Admin',
+	robots: { index: false, follow: false },
+};
+
+export const settingsMetadata: Metadata = {
+	title: 'Settings | Admin',
+	robots: { index: false, follow: false },
+};
+export const usersMetadata: Metadata = {
+	title: 'Users | Admin',
+	robots: { index: false, follow: false },
+};
+
